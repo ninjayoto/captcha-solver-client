@@ -52,7 +52,7 @@ public class CaptchaClient {
         subjectElement.sendKeys(subject);
 
         WebElement captchaKeyDivElement = driver.findElement(By.className("g-recaptcha"));
-        //TODO 3) get site key from source code of target website
+        //TODO 2) get site key from source code of target website
         String siteKey = captchaKeyDivElement.getAttribute("data-sitekey");
         System.out.println("Site Key : " + siteKey);
         String captchaSolution = getCaptchaSolution(siteKey, url);
@@ -68,7 +68,7 @@ public class CaptchaClient {
 
     private static String getCaptchaSolution(String siteKey, String url) {
         try {
-            //TODO 2) captcha solver server address. You can use your local IP address where captcha-server is running.
+            //TODO 3) captcha solver server address. You can use your local IP address where captcha-server is running.
             String captchaServerUrl = "http://captcha-server-by-niranjan.com:9990";
             RestTemplate template = new RestTemplate();
             Map<String, String> map = new HashMap<>();
