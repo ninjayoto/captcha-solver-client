@@ -27,3 +27,9 @@ Change this url with your **Captcha solver server app** url. If you're running *
 
 If you're running **Captcha solver server app** on other system in same network then you can add ip address of that system (Make sure its 9990 port is not blocked by fiirewall).
 
+
+## Steps to execute complete flow
+* Run captcha solver server app.
+* Run captcha solver user app.
+* Run captcha solver client app.
+* Don't touch the mouse and keyboard of a system on which captcha solver user app is running.
